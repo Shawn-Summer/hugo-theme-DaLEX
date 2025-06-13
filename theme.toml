@@ -1,0 +1,12 @@
+name = "DaLEX"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Dark and Light EXtreme (DaLEX) where minimalism meets extremes."
+homepage = "https://github.com/Shawn-Summer/hugo-theme-DaLEX"
+tags = ["blog", "minimal", "black&white", "clear", "easy"]
+features = ["responsive", "syntax highlighting"]
+min_version = "0.87.0"
+
+[author]
+  name = "ShawnX"
+  homepage = "https://shawn-summer.github.io/"

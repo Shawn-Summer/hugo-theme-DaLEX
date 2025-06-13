@@ -1,0 +1,99 @@
+baseurl: "https://shawn-summer.github.io/"  # please update this to your actual URL
+# languageCode: "en-us"
+title: "Hugo website"
+theme: "DaLEX"
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: []
+footnotereturnlinkcontents: "↩"
+enableEmoji: true # enable emoji
+hasCJKLanguage: true
+outputs:
+  home: [html, rss, json]
+permalinks:
+  post: "/post/:year/:month/:day/:slug/"
+
+
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: true
+
+languages:
+  en: 
+    languageName: english
+    languageCode: en-US
+    contentDir: content/en
+    menu:
+      main:
+        - name: Home
+          url: "en/"
+          weight: 1
+        - name: About
+          url: "en/about/"
+          weight: 2
+        - name: Categories
+          url: "en/categories/"
+          weight: 3
+        - name: Tags
+          url: "en/tags/"
+          weight: 4
+        - name: Subscribe
+          url: "en/index.xml"
+          weight: 5
+  zh:
+    languageName: 中文
+    languageCode: zh-CN
+    contentDir: content/zh
+    menu:
+      main:
+        - name: Home
+          url: "zh/"
+          weight: 1
+        - name: About
+          url: "zh/about/"
+          weight: 2
+        - name: Categories
+          url: "zh/categories/"
+          weight: 3
+        - name: Tags
+          url: "zh/tags/"
+          weight: 4
+        - name: Subscribe
+          url: "zh/index.xml"
+          weight: 5
+
+
+params:
+  description: "A website built by Hugo theme DaLEX "
+  footer: "&copy; [Shawn X](https://shawn-summer.github.io/) 2024 -- {Year} | powered by [Hugo](https://gohugo.io/) | theme: [DaLEX](https://github.com/Shawn-Summer/hugo-theme-DaLEX)"
+  mode: "auto"  # theme mode: light , dark or auto 
+  enableKatex: true # enable katex to render math (inline and block) or not
+  enableMermaid: true # render mermaid code or not
+  toc: true # add table of content or not
+  fastsearch: true # enable search bar or not 
+markup:
+  highlight:
+    codeFences: false
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  goldmark:
+    renderer:
+      unsafe: true
+      hardWraps: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+          # # this might couse escape character confused
+          # - - \[ 
+          #   - \]
+          - - $$
+            - $$
+          inline:
+          # # this might couse escape character confused
+          # - - \(
+          #   - \)
+          - - $
+            - $

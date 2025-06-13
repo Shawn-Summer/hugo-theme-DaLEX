@@ -1,0 +1,25 @@
+{{ if (.Site.Params.toc | default true ) }}
+
+  {{ if eq .Site.Params.mode "light" }}
+    <link rel="stylesheet" href="/css/toc-light.css">
+    {{ else if eq .Site.Params.mode "dark" }}
+    <link rel="stylesheet" href="/css/toc-dark.css">
+    {{ else  }}
+    <link rel="stylesheet" href="/css/toc-light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="/css/toc-dark.css" media="(prefers-color-scheme: dark)">
+  {{ end }}
+
+  <div class="post-toc" id="post-toc">
+    <aside>
+      {{ $emtLiPtrn := "(?s)<ul>\\s<li>\\s<ul>(.*)</li>\\s</ul>" }}
+      {{ $rplcEmtLi := "<ul>$1" }}
+      {{ .TableOfContents | replaceRE $emtLiPtrn $rplcEmtLi | safeHTML }}
+      <!-- {{ .TableOfContents | safeHTML }} -->
+    </aside>
+  </div>
+
+  <!-- 目录开关按钮 -->
+  <a href="#" id="toc-toggle" title="切换目录"></a>
+  <script src="/js/toc.js"></script>
+
+{{ end }}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+    {{ if eq .Site.Params.mode "light" }}
+      <link rel="stylesheet" href="/css/light.css">
+    {{ else if eq .Site.Params.mode "dark" }}
+      <link rel="stylesheet" href="/css/dark.css">
+    {{ else  }}
+      <link rel="stylesheet" href="/css/light.css" media="(prefers-color-scheme: light)">
+      <link rel="stylesheet" href="/css/dark.css" media="(prefers-color-scheme: dark)">
+    {{ end }}
+
+    {{ if .Site.Params.fastSearch -}}
+      {{ if eq .Site.Params.mode "light" }}
+        <link rel="stylesheet" href="/css/search-light.css">
+      {{ else if eq .Site.Params.mode "dark" }}
+        <link rel="stylesheet" href="/css/search-dark.css">
+      {{ else  }}
+        <link rel="stylesheet" href="/css/search-light.css" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="/css/search-dark.css" media="(prefers-color-scheme: dark)">
+      {{ end }}
+    {{- end}}
+
+    <link rel="icon" href="/favicon//favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon//favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon//apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
+    {{ partial "head_custom.html" . }}
+  </head>
+
+    <nav>
+    <ul class="menu">
+    {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ i18n .Name | default .Name }}</a></li>
+    {{ end }}
+    <li>
+      {{ with .Translations }}
+        {{ range . }}
+          <a href="{{ .RelPermalink }}">{{ i18n .Lang }}</a>
+        {{ end }}
+      {{ end }}
+    </li>
+    {{ if .Site.Params.fastSearch -}}
+      <li id="search-click" class="menu-item">
+          <a class="menu-item-link" href="javascript:void(0)">{{i18n "Search"}}</a>
+      </li>
+    {{- end }}
+    </ul>
+    <hr/>
+    </nav>
+    {{ if .Site.Params.fastSearch -}}
+<div id="fastSearch">
+    <input id="searchInput">
+    <ul id="searchResults"></ul>
+</div>
+{{- end }}
