@@ -1,6 +1,6 @@
   <footer>
   {{ partial "foot_custom.html" . }}
-  <script src="/js/copybutton.js"></script>
+  <script src="{{ "js/copybutton.js" | relURL }}"></script>
   {{ with .Site.Params.footer }}
   <hr/>
   {{ replace . "{Year}" now.Year | markdownify }}

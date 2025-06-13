@@ -7,50 +7,53 @@
     
     <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
     {{ if eq .Site.Params.mode "light" }}
-      <link rel="stylesheet" href="/css/light.css">
+      <link rel="stylesheet" href="{{ "css/light.css" | relURL }}" />
     {{ else if eq .Site.Params.mode "dark" }}
-      <link rel="stylesheet" href="/css/dark.css">
+      <link rel="stylesheet" href="{{ "css/dark.css" | relURL }}" />
     {{ else  }}
-      <link rel="stylesheet" href="/css/light.css" media="(prefers-color-scheme: light)">
-      <link rel="stylesheet" href="/css/dark.css" media="(prefers-color-scheme: dark)">
+      <link rel="stylesheet" href="{{ "css/light.css" | relURL }}"  media="(prefers-color-scheme: light)" />
+      <link rel="stylesheet" href="{{ "css/dark.css" | relURL }}"  media="(prefers-color-scheme: dark)" />
     {{ end }}
 
     {{ if .Site.Params.fastSearch -}}
       {{ if eq .Site.Params.mode "light" }}
-        <link rel="stylesheet" href="/css/search-light.css">
+        <link rel="stylesheet" href="{{ "css/search-light.css" | relURL }} " />
       {{ else if eq .Site.Params.mode "dark" }}
-        <link rel="stylesheet" href="/css/search-dark.css">
+        <link rel="stylesheet" href="{{ "css/search-dark.css" | relURL }} " />
       {{ else  }}
-        <link rel="stylesheet" href="/css/search-light.css" media="(prefers-color-scheme: light)">
-        <link rel="stylesheet" href="/css/search-dark.css" media="(prefers-color-scheme: dark)">
+        <link rel="stylesheet" href="{{ "css/search-light.css" | relURL }} "  media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="{{ "css/search-dark.css" | relURL }} "  media="(prefers-color-scheme: dark)">
       {{ end }}
     {{- end}}
 
-    <link rel="icon" href="/favicon//favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon//favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon//apple-touch-icon.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-
     {{ partial "head_custom.html" . }}
   </head>
-
     <nav>
     <ul class="menu">
-    {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}">{{ i18n .Name | default .Name }}</a></li>
-    {{ end }}
-    <li>
-      {{ with .Translations }}
-        {{ range . }}
-          <a href="{{ .RelPermalink }}">{{ i18n .Lang }}</a>
-        {{ end }}
+      {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}">{{ i18n .Name | default .Name }}</a></li>
       {{ end }}
-    </li>
-    {{ if .Site.Params.fastSearch -}}
-      <li id="search-click" class="menu-item">
-          <a class="menu-item-link" href="javascript:void(0)">{{i18n "Search"}}</a>
+
+      <!-- 增加翻译按钮 -->
+      <li> 
+        {{ with .Translations }}
+          {{ range . }}
+            <a href="{{ .RelPermalink }}">{{ i18n .Lang }}</a>
+          {{ end }}
+        {{ end }}
       </li>
-    {{- end }}
+      <!-- 增加搜索按钮 -->
+      {{ if .Site.Params.fastSearch -}}
+        <li id="search-click" class="menu-item">
+            <a class="menu-item-link" href="javascript:void(0)">{{i18n "Search"}}</a>
+        </li>
+      {{- end }}
+
+      <!-- 订阅按钮 -->
+      <li class="menu-right" >
+        <a href="{{ .Lang | relURL}}/index.xml"><i class="fa fa-rss"></i></a>
+      </li>
+
     </ul>
     <hr/>
     </nav>

@@ -4,6 +4,13 @@ date: 2023-01-01T08:00:00-07:00
 draft: false
 ---
 
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+
 ## Text Styles
 
 * *Italic* or *italic*
@@ -41,8 +48,12 @@ print(greet("XMinimal"))
 ```bash
 hugo new site mysite
 cd mysite
+rm -rf hugo.toml
 git init
-git submodule add https://github.com/your-theme/xminimal themes/xminimal
+git submodule add https://github.com/Shawn-Summer/hugo-theme-DaLEX.git themes/DaLEX
+cp -a  themes/DaLEX/exampleSite/. content/
+mv content/hugo.yaml .
+hugo server
 ```
 
 ## Text Styles

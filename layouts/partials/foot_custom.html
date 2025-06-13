@@ -26,7 +26,7 @@
 {{- if .Site.Params.fastSearch -}}
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
 <script>
-  var currentLang = '{{ .Lang }}';  // Hugo 模板变量，输出当前语言代码，比如 en, zh
+  var jsonPath  = "{{ .Lang | relURL }}"+"/index.json" //渲染成  /hugo-theme-DaLEX/en/index.json
 </script>
 <script type="text/javascript" src="{{ "js/search.js" | relURL }}"></script>
 

@@ -1,4 +1,4 @@
-baseurl: "https://shawn-summer.github.io/"  # please update this to your actual URL
+baseurl: "https://shawn-summer.github.io/hugo-theme-DaLEX/"  # please update this to your actual URL
 # languageCode: "en-us"
 title: "Hugo website"
 # theme: "DaLEX"
@@ -11,7 +11,7 @@ hasCJKLanguage: true
 outputs:
   home: [html, rss, json]
 permalinks:
-  post: "/post/:year/:month/:day/:slug/"
+  post: "post/:year/:month/:day/:slug/"
 
 
 defaultContentLanguage: zh
@@ -36,9 +36,6 @@ languages:
         - name: Tags
           url: "en/tags/"
           weight: 4
-        - name: Subscribe
-          url: "en/index.xml"
-          weight: 5
   zh:
     languageName: 中文
     languageCode: zh-CN
@@ -57,14 +54,11 @@ languages:
         - name: Tags
           url: "zh/tags/"
           weight: 4
-        - name: Subscribe
-          url: "zh/index.xml"
-          weight: 5
 
 
 params:
   description: "A website built by Hugo theme DaLEX "
-  footer: "&copy; [Shawn X](https://shawn-summer.github.io/) 2024 -- {Year} | powered by [Hugo](https://gohugo.io/) | theme: [DaLEX](https://github.com/Shawn-Summer/hugo-theme-DaLEX)"
+  footer: '&copy; <i class="fab fa-github"></i> [ShawnX](https://shawn-summer.github.io/) 2024 -- {Year} | powered by [Hugo](https://gohugo.io/) | theme: [DaLEX](https://github.com/Shawn-Summer/hugo-theme-DaLEX)'
   mode: "auto"  # theme mode: light , dark or auto 
   enableKatex: true # enable katex to render math (inline and block) or not
   enableMermaid: true # render mermaid code or not
@@ -76,7 +70,7 @@ markup:
   tableOfContents:
     endLevel: 4
     ordered: true
-    startLevel: 2
+    startLevel: 1
   goldmark:
     renderer:
       unsafe: true

@@ -6,13 +6,14 @@ draft: false
 
 [简体中文](https://github.com/Shawn-Summer/hugo-theme-DaLEX/blob/main/readme_zh.md) | [English](https://github.com/Shawn-Summer/hugo-theme-DaLEX/blob/main/readme.md)
 
+
 <p align="center">
   <a href="https://github.com/Shawn-Summer/hugo-theme-DaLEX">
     <img src="https://raw.githubusercontent.com/Shawn-Summer/hugo-theme-DaLEX/main/images/dalex.jpg" width="100" />
   </a>
 </p>
 
-**D**ark **a**nd **L**ight **EX**treme (DaLEX) 是一个为 [Hugo](https://gohugo.io/) 打造的极简主义主题，强调清晰的排版和极致的简洁风格。支持亮/暗色模式、KaTeX 数学公式、本地搜索、目录导航以及多语言切换。示例网站：[demo](https://shawn-summer.github.io/)。
+**D**ark **a**nd **L**ight **EX**treme (DaLEX) 是一个为 [Hugo](https://gohugo.io/) 打造的极简主义主题，强调清晰的排版和极致的简洁风格。支持亮/暗色模式、KaTeX 数学公式、本地搜索、目录导航以及多语言切换。示例网站：[demo](https://shawn-summer.github.io/hugo-theme-DaLEX/)。
 
 ![XMinimal 截图](https://raw.githubusercontent.com/Shawn-Summer/hugo-theme-DaLEX/main/images/combined.jpg)
 
