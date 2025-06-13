@@ -1,4 +1,13 @@
 [简体中文](https://github.com/Shawn-Summer/hugo-theme-DaLEX/blob/main/readme_zh.md) | [English](https://github.com/Shawn-Summer/hugo-theme-DaLEX/blob/main/readme.md)
+# Hugo Theme DaLEX
+
+[![Build](https://github.com/Shawn-Summer/hugo-theme-DaLEX/actions/workflows/run.yaml/badge.svg)](https://github.com/Shawn-Summer/hugo-theme-DaLEX/actions/workflows/gh-pages.yml)
+[![License](https://img.shields.io/github/license/Shawn-Summer/hugo-theme-DaLEX)](https://github.com/Shawn-Summer/hugo-theme-DaLEX/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/Shawn-Summer/hugo-theme-DaLEX?style=social)](https://github.com/Shawn-Summer/hugo-theme-DaLEX/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/Shawn-Summer/hugo-theme-DaLEX)](https://github.com/Shawn-Summer/hugo-theme-DaLEX/commits/main)
+![Hugo Version](https://img.shields.io/badge/Hugo-%3E=0.120-blue)
+
+
 
 <p align="center">
   <a href="https://github.com/Shawn-Summer/hugo-theme-DaLEX">
@@ -6,7 +15,7 @@
   </a>
 </p>
 
-**D**ark **a**nd **L**ight **EX**treme (DaLEX) is a minimalist theme designed for [Hugo](https://gohugo.io/), emphasizing clear typography and an extremely simple style. It supports light/dark mode, KaTeX mathematical formulas, local search, table of contents navigation, and multilingual switching. Example website: [demo](https://shawn-summer.github.io/).
+**D**ark **a**nd **L**ight **EX**treme (DaLEX) is a minimalist theme designed for [Hugo](https://gohugo.io/), emphasizing clear typography and an extremely simple style. It supports light/dark mode, KaTeX mathematical formulas, local search, table of contents navigation, and multilingual switching. Example website: [demo](https://shawn-summer.github.io/hugo-theme-DaLEX/).
 
 ![XMinimal Screenshot](images/combined.jpg)
 

@@ -1,4 +1,4 @@
-baseurl: "https://shawn-summer.github.io/"  # please update this to your actual URL
+baseurl: "https://shawn-summer.github.io/hugo-theme-DaLEX/"  # please update this to your actual URL
 # languageCode: "en-us"
 title: "Hugo website"
 theme: "DaLEX"
@@ -76,7 +76,7 @@ markup:
   tableOfContents:
     endLevel: 4
     ordered: true
-    startLevel: 2
+    startLevel: 1
   goldmark:
     renderer:
       unsafe: true

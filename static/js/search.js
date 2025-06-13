@@ -114,7 +114,7 @@ function fetchJSONFile(path, callback) {
 // on first call of search box (CMD-/)
 //
 function loadSearch() {
-  var jsonPath = '/' + currentLang + '/index.json';
+  // var jsonPath =  '/index.json';
   fetchJSONFile(jsonPath, function(data){
     var options = { // fuse.js options; check fuse.js website for details
       includeMatches: true,
