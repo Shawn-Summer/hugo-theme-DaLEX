@@ -28,6 +28,6 @@
 <script>
   var currentLang = '{{ .Lang }}';  // Hugo 模板变量，输出当前语言代码，比如 en, zh
 </script>
-{{ $search := resources.Get "js/search.js" | minify | fingerprint }}
-<script type="text/javascript" src="{{ $search.RelPermalink }}"></script>
+<script type="text/javascript" src="{{ "js/search.js" | relURL }}"></script>
+
 {{- end -}}
