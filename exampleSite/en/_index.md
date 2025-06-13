@@ -12,7 +12,7 @@ draft: false
   </a>
 </p>
 
-**D**ark **a**nd **L**ight **EX**treme (DaLEX) is a minimalist theme designed for [Hugo](https://gohugo.io/), emphasizing clear typography and an extremely simple style. It supports light/dark mode, KaTeX mathematical formulas, local search, table of contents navigation, and multilingual switching. Example website: [demo](https://shawn-summer.github.io/).
+**D**ark **a**nd **L**ight **EX**treme (DaLEX) is a minimalist theme designed for [Hugo](https://gohugo.io/), emphasizing clear typography and an extremely simple style. It supports light/dark mode, KaTeX mathematical formulas, local search, table of contents navigation, and multilingual switching. Example website: [demo](https://shawn-summer.github.io/hugo-theme-DaLEX/).
 
 ![XMinimal Screenshot](https://raw.githubusercontent.com/Shawn-Summer/hugo-theme-DaLEX/main/images/combined.jpg)
 
