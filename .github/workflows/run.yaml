@@ -37,6 +37,7 @@ jobs:
         run: |
           if [ -d exampleSite ]; then
             mv exampleSite content
+            rm -rf content/hugo.yaml
           fi
 
       - name: Setup Pages
@@ -62,9 +63,6 @@ jobs:
           path: ./public   # Hugo 默认输出目录
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:

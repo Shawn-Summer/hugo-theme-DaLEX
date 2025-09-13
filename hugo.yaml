@@ -11,7 +11,7 @@ hasCJKLanguage: true
 outputs:
   home: [html, rss, json]
 permalinks:
-  post: "post/:year/:month/:day/:slug/"
+  post: "post/:year/:month/:day/:slug/" # use relative path: {{baseurl}}/post/:year/:month/:day/:slug/
 
 
 defaultContentLanguage: zh

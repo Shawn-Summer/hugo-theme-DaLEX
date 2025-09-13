@@ -46,12 +46,11 @@
   
   /* 自定义滚动条 */
   #post-toc::-webkit-scrollbar {
-    width: 6px;
+    width: 1px;
   }
   
   #post-toc::-webkit-scrollbar-thumb {
-    background-color: #2f2f31;
-    border-radius: 3px;
+    background-color: #000000;
   }
   
   /* 切换按钮 */

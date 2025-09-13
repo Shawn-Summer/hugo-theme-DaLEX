@@ -11,7 +11,7 @@ hasCJKLanguage: true
 outputs:
   home: [html, rss, json]
 permalinks:
-  post: "/post/:year/:month/:day/:slug/"
+  post: "post/:year/:month/:day/:slug/" # use relative path: {{baseurl}}/post/:year/:month/:day/:slug/
 
 
 defaultContentLanguage: zh
@@ -58,7 +58,7 @@ languages:
 
 params:
   description: "A website built by Hugo theme DaLEX "
-  footer: "&copy; [Shawn X](https://shawn-summer.github.io/) 2024 -- {Year} | powered by [Hugo](https://gohugo.io/) | theme: [DaLEX](https://github.com/Shawn-Summer/hugo-theme-DaLEX)"
+  footer: '&copy; <i class="fab fa-github"></i> [ShawnX](https://shawn-summer.github.io/) 2024 -- {Year} | powered by [Hugo](https://gohugo.io/) | theme: [DaLEX](https://github.com/Shawn-Summer/hugo-theme-DaLEX)'
   mode: "auto"  # theme mode: light , dark or auto 
   enableKatex: true # enable katex to render math (inline and block) or not
   enableMermaid: true # render mermaid code or not
