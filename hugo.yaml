@@ -69,8 +69,8 @@ markup:
     codeFences: false
   tableOfContents:
     endLevel: 4
-    ordered: true
-    startLevel: 1
+    ordered: false
+    startLevel: 2
   goldmark:
     renderer:
       unsafe: true
