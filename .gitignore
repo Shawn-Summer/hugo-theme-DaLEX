@@ -1,4 +1,7 @@
-public/
-content/
+/public/
+/content/
 .DS_Store
-
+/exampleSite/public/
+/exampleSite/content/
+/exampleSite/themes/
+/exampleSite/.hugo_build.lock

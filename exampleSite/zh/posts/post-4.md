@@ -491,8 +491,8 @@ Obsidian 努力让 Obsidian 的语法不偏离正统的 Markdown 语法太多。
 
 | Syntax                | Description                                                                               |
 | --------------------- | ----------------------------------------------------------------------------------------- |
-| **\[\[ \]\]**   | [[Internal links]](https://help.obsidian.md/Linking+notes+and+files/Internal+links)            |
-| **\!\[\[ \]\]** | ![[Embedding files]](https://help.obsidian.md/Linking+notes+and+files/Embedding+files)          |
+| **\[\[ \]\]**   | [Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links)            |
+| **\!\[\[ \]\]** | [Embedding files](https://help.obsidian.md/Linking+notes+and+files/Embedding+files)          |
 | `%%`                | %% Comments %% (https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments) |
 | `> [!note]`         | > [!Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts)                         |
 
